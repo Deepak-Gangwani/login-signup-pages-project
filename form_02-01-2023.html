@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/lock.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        #container {
+            border: 1px solid black;
+            background-color: aquamarine;
+            width: 100%;
+            height: 650px;
+
+        }
+
+        .box {
+            /* border: 1px solid red; */
+            width: 60%;
+            height: 70%;
+            position: relative;
+            top: 100px;
+            margin: auto;
+            animation: move 1s;
+        }
+        @keyframes move {
+            from {top: 400px;}
+            /* to {left:50px} */
+            
+        }
+
+        .box-header {
+            /* border: 1px solid blue; */
+            width: 100%;
+            height: 29%;
+            margin: 0px 0px 0px 0px;
+            padding: 0%;
+        }
+
+        .input {
+            display: grid;
+            grid-template-columns: 210px 210px;
+            /* justify-content: space-between; */
+
+        }
+
+        .input1 input {
+            border: none;
+            border-bottom: 1px solid grey;
+            margin-bottom: 10px;
+            /* justify-content: space-around; */
+
+        }
+
+        .input2 input {
+            border: none;
+            border-bottom: 1px solid grey;
+            margin-bottom: 10px;
+            /* justify-content: space-around; */
+        }
+
+        .box-form {
+            /* border: 1px solid purple; */
+            background-color: white;
+            width: 60%;
+            height: 70%;
+            
+        }
+
+        .request-header {
+            margin-bottom: 5%;
+            padding-top: 20px;
+            font-size: larger;
+            font-weight: 1000;
+            color: blue;
+        }
+
+        form {
+            margin-left: 10%;
+            margin-top: 5%;
+            color: blue;
+        }
+
+        .reach{
+            border: 1px solid blue;
+            background-color: blue;
+            width: 39%;
+            height: 63%;
+            position: relative;
+            top: -320px;
+            left: 480px;
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .reach-header{
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 1000;
+        }
+
+        .list-box{
+            display: grid;
+            grid-template-columns: 110px 110px;
+            color: white;
+            width: 80%;
+            height: 80%;
+        }
+        .list1 div{
+            margin-bottom: 20px;
+        }
+        .list2 div{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box">
+            <div class="box-header">
+                <h1 style="font-weight: bolder; margin-top: 0%;">Connect With Us</h1>
+                <p>We would love to respond to your queries and help you succeed,
+                <p>
+                <p style="line-height: 0%;">Feel free to get in touch with us.</p>
+            </div>
+            <div class="box-form">
+                <div class="request">
+                    <form action="">
+                        <div class="request-header">Send your request</div>
+                        <div class="input">
+                            <div class="input1">
+                                <div><label for="">Name</label></div>
+                                <input type="text" placeholder="John Amendo" required>
+                                <div><label for="">Email</label></div>
+                                <input type="email" placeholder="johnnamendogm@gmail.com" required>
+                            </div>
+                            <div class="input2">
+                                <div><label for="">Phone</label></div>
+                                <input type="number" placeholder="91+ 123456789" required>
+                                <div><label for="">Subject</label></div>
+                                <input type="text" placeholder="Product Demo" required>
+                            </div>
+                        </div>
+                        <div><label for="">Message</label></div>
+                        <textarea name="" id="" cols="50" rows="5" placeholder="Your Message" required
+                            style="border: 1px solid grey;"></textarea>
+                        <div><input type="button" value="SEND"
+                                style="background-color: blue; color: white; border-radius: 15px; padding: 5px 15px 5px 15px; box-shadow: 10px grey; margin-top: 10px;">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="reach">
+                <div class="reach-header">Reach Us</div>
+                <div class="list-box">
+                    <div class="list1">
+                        <div>Email</div>
+                        <div>Phone</div>
+                        <div>Address</div>
+                    
+                    </div>
+                    <div class="list2">
+                        <div>contactus@example.com</div>
+                        <div>91+ 123456789</div>
+                        <div>#212, ground floor,7th cross,karammangla, Bengaluru 560001</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

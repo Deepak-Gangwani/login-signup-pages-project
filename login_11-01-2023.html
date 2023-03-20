@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20191003/ourmid/pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.jpg" type="image/x-icon">
+    <title>Login page</title>
+    <script src="https://kit.fontawesome.com/13240490a1.js" crossorigin="anonymous"></script>
+    <style>
+        #login {
+            width: auto;
+            height: auto;
+
+            justify-content: center;
+            text-align: center;
+            background-image: url('images/download.png');
+            /* background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%); */
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border: 1px solid yellow;
+            color: yellow;
+            font-weight: bolder;
+        }
+
+
+        h3 {
+            color: black;
+            font-weight: normal;
+            text-align: left;
+            margin-left: 50px;
+            margin-bottom: 0%;
+        }
+
+        .container {
+            border: 1px solid rgb(255, 255, 255, 0.3);
+            border-radius: 16px;
+            margin-left: 35%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            width: 25%;
+            height: 700px;
+            background: rgb(255, 255, 255, 0.2);
+            /* opacity: 0.7; */
+            box-shadow: 0 4px 30px rgb(0, 0, 0, 0.1);
+            /* transition: 0.5s; */
+            backdrop-filter: blur(5px);
+            animation: mymove 5s infinite;
+            position: relative;
+        }
+
+        @keyframes mymove {
+            0% {
+                transform: translateX(0px);
+                
+            }
+
+            25% {
+                transform: translateX(300px);
+            }
+
+            50%{
+                transform: translateX(0px);
+            }
+
+
+            75%{
+                transform: translateX(-300px);
+            }
+
+            100%{
+                transform: translateX(0px);
+            }
+        }
+
+        .container:hover{
+            animation: none;
+            /* margin-left: 37%; */
+        /* transform: rotateY('angle'); */
+         }
+
+        .header {
+            font-weight: bolder;
+            color: #fff;
+            font-size: x-large;
+        }
+
+        /* .input-box{
+            text-align: left;
+            margin-left: 20px;
+        } */
+        input {
+            border: none;
+            background-color: whitesmoke;
+            width: 80%;
+            border-bottom: 1px solid grey;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+
+
+
+        button {
+            padding: 15px 30px 15px 30px;
+            border: 1px solid rgb(193, 89, 199);
+            width: 70%;
+            height: 50px;
+            border-radius: 50px;
+            color: white;
+            background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+            margin-top: 25px;
+
+        }
+
+        button:hover {
+            background: linear-gradient(#e66465, #9198e5);
+            height: 60px;
+            width: 75%;
+            transition-duration: 5s;
+            transition-delay: 5s;
+
+        }
+
+
+
+        .social-icon {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .icon1 a {
+            color: blue;
+            transition: 0.5s;
+        }
+
+        .icon1 a:hover {
+            margin-top: -10px;
+            font-size: 20px;
+        }
+
+
+        .icon2 a {
+            color: rgb(0, 94, 255);
+            transition: 0.5s;
+        }
+
+        .icon2 a:hover {
+            margin-top: -10px;
+            font-size: 20px;
+        }
+
+        .icon3 a {
+            color: red;
+            transition: 0.5s;
+        }
+
+        .icon3 a:hover {
+            margin-top: -10px;
+            font-size: 20px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    
+    <div id="login">
+        <div class="container" data-tilt>
+            <div class="header">
+                <h1>Login</h1>
+            </div>
+            <form>
+                <!-- <div class="input1"> -->
+                <h3>Username</h3>
+                <!-- <div> -->
+                <!-- <span><i class="fa-regular fa-user fa-1x"></i></span> -->
+                <input type="text" name="Name" placeholder="👤  Type your username" required>
+                <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="input2"> -->
+                <h3>Password</h3>
+                <!-- <div> -->
+                <!-- <span><img src="images/lock.ico" alt="" width="20" height="20"></span> -->
+                <input type="password" id="password" name="Number" placeholder="🔒  Type your password" required>
+                <button style="width: 150px; border-radius: 0%; padding: 0%;" type="button" onclick="toggle(this)">Show Password</button>
+                <!-- </div> -->
+                <!-- </div> -->
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                    style="text-decoration: none; margin-left: 10%; color: black; margin-top: 10%;">Forgot password?</a>
+                <button type="submit">LOGIN</button>
+            </form>
+            <!-- <div><a href="http://" target="_blank" rel="noopener noreferrer"
+                    style="text-decoration: none; margin-left: 60%; color: black; margin-top: 10%;">Forgot password?</a>
+            </div> -->
+
+            <!-- <div class="button"> -->
+            <!-- <button type="submit">LOGIN</button> -->
+
+            <div class="or-sign-up-using">
+                <div style="margin-top: 30px;">Or Sign Up Using</div>
+                <div class="social-icon">
+                    <div class="icon1"><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook fa-3x"></i></a></div>
+                    <div class="icon2"><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-linkedin fa-3x"></i></a></div>
+                    <div class="icon3"><a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-google fa-3x"></i></a></div>
+                </div>
+            </div>
+            <div class="sign-up" style="margin-top: 10px;">
+                <!-- <div style="margin-bottom: 20px;">Or Sign Up Using</div> -->
+                <div style="margin-top: 40px;">
+                    <a href="sign_up_11-01-2023.html" target="_blank" rel="noopener noreferrer"
+                        style="text-decoration: none; color: black;">Create Your Account Using <span style="color:aqua">SIGN UP</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- at the end of the body -->
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+    let pass = document.getElementById("password");
+    function toggle(elem) {
+        let type = pass.getAttribute('type');
+        if (type === "password") {
+            pass.setAttribute('type', 'text');
+            elem.innerText = "Hide Password";
+        }
+        else {
+            pass.setAttribute("type", "password");
+            elem.innerText = "Show Password";
+        }
+    }
+
+</script>
+
+
+</body>
+
+</html>

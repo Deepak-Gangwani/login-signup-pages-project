@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/lock.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            box-sizing: content-box;
+        }
+
+        #container {
+             /* background: url(images/women.jpg);
+            background-repeat: no-repeat;
+            background-size: auto; */
+            background: url(images/women.jpg);
+            background-repeat: no-repeat;
+            /* background-size: auto; */
+            background-size: 100% 100%;
+
+            /* height: auto; */
+            height: 500px;
+
+        }
+
+        .box {
+            border: 6px groove gray;
+            background-color: black;
+            border-radius: 10px;
+            width: 450px;
+            height: 260px;
+            margin: auto;
+            margin-top: 150px;
+            margin-left: 150px;
+            text-align: center;
+            margin-bottom: 150px;
+        }
+
+        .box_header {
+            color: white;
+            text-align: center;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        input {
+            margin-top: 10px;
+            text-align: center;
+            /* padding: 5px 50px 5px 50px; */
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 50%;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 51%;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            margin-top: 10px;
+            font-weight: bolder;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            padding: 5px;
+            width: 53%;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form class="box">
+            <div class="box_header">Join the emerging Blog on Web Development now!!</div>
+            <div><input type="text" placeholder="Enter your Full Name" required></div>
+            <div><input type="text" placeholder="Enter your Area of Interest" required></div>
+            <div><input type="email" placeholder="Enter your email address" required></div>
+            <div><input type="number" placeholder="Enter your Mobile Number" required></div>
+            <div><button style="background-color: rgb(2, 169, 2);" type="submit">Submit</button></div>
+            <div><button style="background-color: rgb(249, 25, 25);" type="reset">Reset</button></div>
+        </form>
+    </div>
+
+</body>
+
+</html>
